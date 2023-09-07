@@ -48,4 +48,5 @@ if [[ -n "$DESTINATION_SSH_PRIVATE_KEY" ]]; then
   git config --local core.sshCommand "/usr/bin/ssh -i ~/.ssh/dst_rsa"
 fi
 
+git fetch
 git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}"
